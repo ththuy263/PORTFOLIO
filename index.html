@@ -1,19 +1,125 @@
-<html lang="vi">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phi Long - Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="../image/falvicon.ico">
-    <meta name="description" content="Portfolio của Phi Long - Sinh viên Công nghệ Thông tin">
-    <meta name="author" content="Phi Long">
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="../css/achievement.css">
-    <link rel="stylesheet" href="../css/education.css">
-    <link rel="stylesheet" href="../css/services.css">
-    
-    <link rel="stylesheet" href="../css/responsive/992.css">
-    <link rel="stylesheet" href="../css/responsive/768.css">
-    <link rel="stylesheet" href="../css/responsive/480.css">
-    <link rel="stylesheet" href="../css/responsive/360.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Thuy Portfolio</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      scroll-behavior: smooth; /* 👈 giúp scroll mượt */
+    }
+
+    /* HEADER */
+    header {
+      background: #333;
+      color: white;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      top: 0;
+    }
+
+    header nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* MAIN */
+    .container {
+      margin-top: 80px;
+      padding: 20px;
+    }
+
+    .intro {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .intro img {
+      width: 200px;
+      border-radius: 10px;
+    }
+
+    .intro-text {
+      font-size: 18px;
+    }
+
+    section {
+      margin-top: 50px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+  </style>
 </head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <nav>
+    <a href="#info">Thông tin cá nhân</a>
+    <a href="#education">Trình độ học vấn</a>
+    <a href="#achievement">Thành tựu</a>
+  </nav>
+</header>
+
+<!-- BODY -->
+<div class="container">
+
+  <!-- INTRO -->
+  <div class="intro">
+    <img src="https://via.placeholder.com/200" alt="profile">
+
+    <div class="intro-text">
+      <h1>Thuy</h1>
+      <p> Sophomore at Foreign Trade University </p>
+      <p> Passionate about editing and content creating </p>
+    </div>
+  </div>
+
+  <!-- THÔNG TIN CÁ NHÂN -->
+  <section id="info">
+    <h2>Thông tin cá nhân</h2>
+    <ul>
+      <li>Name: Thuy</li>
+      <li>Location: Vietnam</li>
+      <li>Email: your-email@gmail.com</li>
+    </ul>
+  </section>
+
+  <!-- TRÌNH ĐỘ -->
+  <section id="education">
+    <h2>Trình độ học vấn</h2>
+    <ul>
+      <li>Foreign Trade University</li>
+      <li>Major: International Business</li>
+      <li>Year: Sophomore</li>
+    </ul>
+  </section>
+
+  <!-- THÀNH TỰU -->
+  <section id="achievement">
+    <h2>Thành tựu</h2>
+    <ul>
+      <li>Top student in class</li>
+      <li>Completed SQL course</li>
+      <li>Content creator on social media</li>
+    </ul>
+  </section>
+
+</div>
+
+</body>
+</html>
