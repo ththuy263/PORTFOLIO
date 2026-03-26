@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Thuy Portfolio</title>
-<link href="https://fonts.googleapis.com/css2?family=Gravitas One&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
 <style>
   body {
     margin: 0;
-    font-family: Coolvertica;
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
     background: linear-gradient(135deg, #667eea, #764ba2);
     transition: 0.5s;
@@ -24,6 +25,7 @@
     padding: 15px;
     text-align: center;
     backdrop-filter: blur(10px);
+    z-index: 1000; /* đảm bảo nằm trên */
   }
 
   header a {
@@ -40,7 +42,7 @@
 
   /* CONTAINER */
   .container {
-    margin-top: 100px;
+    margin-top: 120px; /* tránh bị header đè */
     padding: 20px;
   }
 
@@ -53,7 +55,6 @@
     padding: 20px;
     border-radius: 20px;
     backdrop-filter: blur(10px);
-
     animation: fadeIn 1s ease;
   }
 
@@ -74,9 +75,10 @@
     border-radius: 15px;
     background: rgba(255,255,255,0.2);
     backdrop-filter: blur(10px);
-
     animation: float 4s ease-in-out infinite;
     transition: 0.3s;
+
+    scroll-margin-top: 120px; /* 🔥 fix bị che */
   }
 
   section:hover {
@@ -98,7 +100,6 @@
 
   li:hover {
     transform: translateX(10px);
-    color: #222;
   }
 
   /* BUTTON */
@@ -120,7 +121,7 @@
   /* ANIMATION */
   @keyframes float {
     0% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
+    50% { transform: translateY(-8px); }
     100% { transform: translateY(0px); }
   }
 
@@ -135,14 +136,13 @@
 <body>
 
 <header>
-  <a href="#info">Personal Information</a>
-  <a href="#education">Academic Level</a>
-  <a href="#achievement">Achievemnts</a>
+  <a href="#info">Thông tin cá nhân</a>
+  <a href="#education">Trình độ học vấn</a>
+  <a href="#achievement">Thành tựu</a>
 </header>
 
 <div class="container">
 
-  <!-- INTRO -->
   <div class="intro">
     <img src="https://via.placeholder.com/200">
     <div>
@@ -154,37 +154,33 @@
     </div>
   </div>
 
-  <!-- INFO -->
   <section id="info">
-    <h2>Personal Information</h2>
+    <h2>Thông tin cá nhân</h2>
     <ul>
       <li>Name: Thuy</li>
       <li>Location: Ha Noi</li>
-      <li>Email: ththuynguyenthi263@gmail.com</li>
+      <li>Email: thhuynguyenthi263@gmail.com</li>
       <li>Birthday: 03-26-2006</li>
-      <li>Hometown: Quang Tri</li>
-      <li>Hobby: Editing videos, i also have a tiktok account where I post random edits that I like and make friends</li>
+      <li>Hobby: Editing videos</li>
     </ul>
   </section>
 
-  <!-- EDUCATION -->
   <section id="education">
     <h2>Academic Level</h2>
     <ul>
       <li>Foreign Trade University</li>
       <li>Major: International Business Economics</li>
       <li>Year: Sophomore</li>
-      <li>Certificate: IELTS 8.0</li>
+      <li>IELTS: 8.0</li>
     </ul>
   </section>
 
-  <!-- ACHIEVEMENT -->
   <section id="achievement">
     <h2>Achievements</h2>
     <ul>
       <li>Top student</li>
-      <li>Completed SQL course</li>
       <li>Content creator</li>
+      <li>SQL learner</li>
     </ul>
   </section>
 
