@@ -1,595 +1,290 @@
 
 <!DOCTYPE html>
-<html lang="vi">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phi Long - Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="../image/falvicon.ico">
-    <meta name="description" content="Portfolio của Phi Long - Sinh viên Công nghệ Thông tin">
-    <meta name="author" content="Phi Long">
-    <link rel="stylesheet" href="../css/home.css">
-    <link rel="stylesheet" href="../css/achievement.css">
-    <link rel="stylesheet" href="../css/education.css">
-    <link rel="stylesheet" href="../css/services.css">
-    
-    <link rel="stylesheet" href="../css/responsive/992.css">
-    <link rel="stylesheet" href="../css/responsive/768.css">
-    <link rel="stylesheet" href="../css/responsive/480.css">
-    <link rel="stylesheet" href="../css/responsive/360.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	<title>Ariel Andrade</title>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/media-selection.js"></script>
+	<script type="text/javascript" src="js/console.js"></script>
+	<script type="text/javascript" src="js/projects/projects.js"></script>
+	<script type="text/javascript" src="js/projects/projects-cards-updater.js"></script>
+	<script type="text/javascript" src="js/projects/languages-field.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/cards.css">
+	<link rel="stylesheet" type="text/css" href="styles/timeline.css">
+	<link rel="stylesheet" type="text/css" href="styles/navbar.css">
+	<link rel="stylesheet" type="text/css" href="styles/console.css">
+	<link rel="stylesheet" type="text/css" href="styles/projects.css">
+	<link rel="icon" href="assets/favicon.ico">
+	<!--Fonts-->
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Header & Navigation -->
-    <header>
-        <a href="#home" class="logo">Phi Long</a>
-        <button class="menu-toggle" id="menuToggle">
-            <i class="fas fa-bars"></i>
-        </button>
-        <nav id="navbar">
-            <a href="#home" class="nav-link active"><b>Trang chủ</b></a>
-            <a href="#services" class="nav-link"><b>Dịch vụ</b></a>
-            <a href="#education" class="nav-link"><b>Học vấn</b></a>
-            <a href="#achievement" class="nav-link"><b>Thành tựu</b></a>
-        </nav>
-    </header>
+	<nav id="mysidenav" class="sidenav">
+		<div id="mysidenavcontent" class="sidenavcontent">
+			<img src="assets/profile_picture_adjusted.png" alt="Profile picture" class="profile-picture" loading="lazy">
+			<p class="sidebarname">Ariel Andrade</p>
+			<hr>
+			<p class="sidebarcitation">"Stay hungry, stay foolish."</p>
+			<p class="sidebarauthor">- Steve Jobs</p>
+			<hr>
+			<div class="row">
+				<div class="column">
+					<a href="https://www.linkedin.com/in/ariellima/" target="_blank">
+						<img id="linkedin" src="assets/medias/linkedin.png" onMouseOver="selected(this)"
+							onMouseOut="unselected(this)" alt="Go to LinkedIn profile" class="mediaicon" loading="lazy"> 
+					</a>
+				</div>
+				<div class="column">
+					<a href="https://github.com/sudoariel" target="_blank">
+						<img id="github" src="assets/medias/github.png" onMouseOver="selected(this)"
+							onMouseOut="unselected(this)" alt="Go to GitHub profile" class="mediaicon" loading="lazy">
+					</a>
+				</div>
+				<div class="column">
+					<a href="https://www.facebook.com/ariel.lima.andrade/" target="_blank">
+						<img id="facebook" src="assets/medias/facebook.png" onMouseOver="selected(this)"
+							onMouseOut="unselected(this)" alt="Go to Facebook profile" class="mediaicon" loading="lazy">
+					</a>
+				</div>
+				<div class="column">
+					<a href="https://www.instagram.com/im.ariel/" target="_blank">
+						<img id="instagram" src="assets/medias/instagram.png" onMouseOver="selected(this)"
+							onMouseOut="unselected(this)" alt="Go to Instagram profile" class="mediaicon" loading="lazy">
+					</a>
+				</div>
+			</div>
 
-    <!-- Main Content -->
-    <main>
-        <!-- Home Section -->
-        <section id="home" class="section home">
-            <div class="container">
-                <div class="home-content">
-                    <div class="home-img">
-                        <img src="../image/PhiLong.jpg" alt="Ảnh Phi Long">
-                    </div>
-                    <div class="home-text">
-                        <h1>Profile <span>Phi Long</span></h1>
-                        <h3 class="typing-text">Tôi là <span></span></h3>
-                        <p>
-                            Là sinh viên năm 2 ngành <i>Công Nghệ Thông Tin</i> tại 
-                            <span class="highlight" style="font-family: Arial, Helvetica, sans-serif;">HUIT - Đại học Công Thương TP.HCM</span>, 
-                            mình đang từng bước trau dồi kỹ năng lập trình và phát triển phần mềm. 
-                            Mình luôn sẵn sàng học hỏi, thử sức với các công nghệ mới và đón nhận mọi thử thách.
-                        </p>
-                        <div class="contact-info">
-                            <p><i class="fas fa-envelope"></i> yuluwusu@gmail.com</p>
-                            <p><i class="fas fa-phone"></i> 0357 534 303</p>
-                        </div>
-                        <div class="social-icons">
-                            <a href="https://www.facebook.com/philong.hoangxuan.54" target="_blank" aria-label="Facebook">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                            <a href="https://github.com/YuluWusu" target="_blank" aria-label="GitHub">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.tiktok.com/@bimecham" target="_blank" aria-label="TikTok">
-                                <i class="fab fa-tiktok"></i>
-                            </a>
-                            <a href="https://www.instagram.com/k.amasea" target="_blank" aria-label="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
-                        <a href="#contact" class="btn">Liên hệ tôi</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+			<div class="nav_btns">
+				<button id="btn_aboutme" onClick="navscroll(this)">ABOUT ME</button><br>
+				<button id="btn_myskills" onClick="navscroll(this)">MY SKILLS</button><br>
+				<button id="btn_work" onClick="navscroll(this)">WORK EXPERIENCE</button><br>
+				<button id="btn_education" onClick="navscroll(this)">EDUCATION</button><br>
+				<button id="btn_projects" onClick="navscroll(this)">PROJECTS</button><br>
+			</div>
+			
+			<div class="nav_bottom_btns">
+				<div class="column_button">
+					<button onclick="location.href='mailto:lima.ariel97@gmail.com'" id="btn_contactme">CONTACT ME</button>
+				</div>
+				<div class="column_button">
+					<button onclick="location.href='attachments/CV.pdf'" target="_blank" id="btn_viewresume">GET MY CV</button>
+				</div>							
+			</div>
 
-        <!-- Services Section -->
-       <section id="services" class="section-services services">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Dịch vụ của tôi</h2>
-                    <div class="section-subtitle">
-                        <p>Chuyên cung cấp các giải pháp công nghệ và phát triển phần mềm chất lượng cao.</p>
-                    </div>
-                </div>
-                <div class="services-content">
-                    <!-- 2. Gia sư tiếng Anh - TRẠNG THÁI XANH -->
-                    <div class="service-row service-active">
-                        <div class="service-icon">
-                            <i class="fas fa-language"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>Gia Sư Tiếng Anh</h3>
-                            <p>Hỗ trợ học tiếng Anh từ cơ bản, tập trung giao tiếp, ngữ pháp và cải thiện điểm số học tập.</p>
-                            <div class="service-features">
-                                <span class="feature-tag">Giao tiếp cơ bản</span>
-                                <span class="feature-tag">Ngữ pháp</span>
-                                <span class="feature-tag">Phát âm</span>
-                                <span class="feature-tag">TOEIC 850+</span>
-                            </div>
-                        </div>
-                        <div class="service-meta">
-                            <div class="service-price">80k/giờ</div>
-                            <div class="service-status status-active">
-                                <i class="fas fa-user-check"></i> Còn slot
-                            </div>
-                            <div class="service-actions">
-                                <a href="#register" class="btn-register">Đăng ký học</a>
-                                <a href="#trial" class="btn-contact">Học thử miễn phí</a>
-                            </div>
-                        </div>
-                    </div>
+		</div>
+	</nav>
+	<div id="mycontent" class="content">
+		<section id="about_me" class="scroll-element">
+			<div class="title">
+				<h1 class="firstname">
+					ARIEL
+				</h1>
+				<h1 class="lastname">
+					ANDRADE
+				</h1>
+			</div>
+			<div class="container">
+				<img id="console" class="console_img" src="assets/console.png" loading="lazy">
+				<div id="typedtext" class="typedtextclass"> </div>
+			</div>
+		</section>
 
-                    <!-- 3. Gia sư CNTT - TRẠNG THÁI XANH -->
-                    <div class="service-row service-active">
-                        <div class="service-icon">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>Gia Sư CNTT & Cải Thiện GPA</h3>
-                            <p>Hỗ trợ môn chuyên ngành CNTT, cải thiện điểm số và kỹ năng lập trình.</p>
-                            <div class="service-features">
-                                <span class="feature-tag">C/C++</span>
-                                <span class="feature-tag">Giải thuật</span>
-                                <span class="feature-tag">Lập trình</span>
-                                <span class="feature-tag">GPA 3.8+</span>
-                            </div>
-                        </div>
-                        <div class="service-meta">
-                            <div class="service-price">80-150k/buổi</div>
-                            <div class="service-status status-active">
-                                <i class="fas fa-heartbeat"></i> Active
-                            </div>
-                            <div class="service-actions">
-                                <a href="#contact" class="btn-register">Đăng ký ngay</a>
-                                <a href="#contact" class="btn-contact">Liên hệ tư vấn</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 5. PT Calisthenics - TRẠNG THÁI XANH -->
-                    <div class="service-row service-active">
-                        <div class="service-icon">
-                            <i class="fas fa-dumbbell"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>PT Calisthenics & Thể Thao</h3>
-                            <p>Hướng dẫn tập calisthenics, thể dục dụng cụ, xây dựng lộ trình tập luyện cá nhân.</p>
-                            <div class="service-features">
-                                <span class="feature-tag">PT</span>
-                                <span class="feature-tag">Thể dục</span>
-                                <span class="feature-tag">Dinh dưỡng</span>
-                                <span class="feature-tag">Motivation</span>
-                            </div>
-                        </div>
-                        <div class="service-meta">
-                            <div class="service-price">100k/buổi</div>
-                            <div class="service-status status-active">
-                                <i class="fas fa-heartbeat"></i> Active
-                            </div>
-                            <div class="service-actions">
-                                <a href="#contact" class="btn-register">Đăng ký tập</a>
-                                <a href="#contact" class="btn-contact">Tư vấn lộ trình</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 4. Editor Video/Banner - TRẠNG THÁI VÀNG (Liên hệ báo giá) -->
-                    <div class="service-row service-contact">
-                        <div class="service-icon">
-                            <i class="fas fa-video"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>Editor Video & Thiết Kế Banner</h3>
-                            <p>Chỉnh sửa video, thiết kế banner, poster, content hình ảnh cho MXH và YouTube.</p>
-                            <div class="service-features">
-                                <span class="feature-tag">TikTok/YouTube</span>
-                                <span class="feature-tag">Banner QC</span>
-                                <span class="feature-tag">Photoshop</span>
-                                <span class="feature-tag">Capcut</span>
-                            </div>
-                        </div>
-                        <div class="service-meta">
-                            <div class="service-price price-contact">Liên hệ báo giá</div>
-                            <div class="service-actions">
-                                <a href="#contact" class="btn-contact btn-contact-yellow-alt">Liên hệ</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 1. Sửa máy tính -->
-                    <div class="service-row service-contact">
-                        <div class="service-icon">
-                            <i class="fas fa-laptop-medical"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>Sửa Chữa Máy Tính & Laptop</h3>
-                            <p>Chẩn đoán và khắc phục phần cứng, phần mềm, cài đặt hệ điều hành, tối ưu hiệu suất.</p>
-                            <div class="service-features">
-                                <span class="feature-tag">Vệ sinh phần cứng</span>
-                                <span class="feature-tag">Cài Win/driver</span>
-                                <span class="feature-tag">Diệt virus</span>
-                                <span class="feature-tag">Nâng cấp</span>
-                            </div>
-                        </div>
-                        <div class="service-meta">
-                            <div class="service-price price-contact">Liên hệ báo giá</div>
-                            <div class="service-actions">
-                                <a href="#contact" class="btn-contact btn-contact-yellow-alt">Liên hệ</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- 6. Thiết kế Website - TRẠNG THÁI XÁM (Tạm dừng) -->
-                    <div class="service-row service-paused">
-                        <div class="service-icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
-                        <div class="service-content">
-                            <h3>Thiết Kế Website</h3>
-                            <p>Thiết kế portfolio, landing page responsive với giao diện hiện đại, tối ưu UX/UI.</p>
-                            <div class="service-features">
-                                <span class="feature-tag-paused">Portfolio/CV</span>
-                                <span class="feature-tag-paused">Landing Page</span>
-                                <span class="feature-tag-paused">Responsive</span>
-                                <span class="feature-tag-paused">SEO cơ bản</span>
-                            </div>
-                        </div>
-                        <div class="service-meta">
-                            <div class="service-price price-paused">1,5 triệu - 3 triệu</div>
-                            <div class="service-status status-paused">
-                                <i class="fas fa-pause-circle"></i> <span style="color:tomato; opacity: 70%;">Tạm dừng nhận</span>
-                            </div>
-                            <div class="service-actions">
-                                <a href="#contact" class="btn-register-paused">Nhận thông báo</a>
-                                <a href="#portfolio" class="btn-contact-paused">Xem mẫu thiết kế</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<section id="my_skills" class="aftertw scroll-element">
+			<h1 class="titlehead">
+				MY SKILLS
+			</h1>
+			<div id="skills_grid_view" class="skill-cards">
+				<div id="android_platform_development" class="card">
+					<h3 class="card_title">Android Platform Developer</h3>
+					<img id="android_platform_logo" alt="Android Platform" src="assets/cards/android3.png"
+						class="card_logo" loading="lazy"/>
+					<ul class="card_list">
+						<li>AOSP Blueprint</li>
+						<li>Android Automotive OS</li>
+						<li>Android System services development (Binder/AIDL)</li>
+						<li>Java/Kotlin system application development for Android Automotive</li>
+					</ul>
+				</div>
+				<div id="android_development" class="card">
+					<h3 class="card_title">Android Developer</h3>
+					<img id="android_logo" alt="Android" src="assets/cards/android2.png" class="card_logo" loading="lazy"/>
+					<ul class="card_list">
+						<li>Mobile app development in Java/Kotlin</li>
+						<li>Android Architecture patterns</li>
+						<li>Android SDK/NDK</li>
+					</ul>
+				</div>
+				<div id="python_development" class="card">
+					<h3 class="card_title">Python Developer</h3>
+					<img id="python_logo" alt="Python" src="assets/cards/python.png" class="card_logo" loading="lazy"/>
+					<ul class="card_list">
+						<li>Machine Learning and Deep Learning algorithms</li>
+						<li>Simulator development using pygame</li>
+						<li>Data analysis</li>
+						<li>Digital Signal Processing algorithms</li>
+					</ul>
+				</div>
+				<div id="c_cpp_development" class="card">
+					<h3 class="card_title"> C/C++ Developer</h3>
+					<img id="c_cpp_logo" alt="C/C++" src="assets/cards/cpp.png" class="card_logo" loading="lazy"/>
+					<ul class="card_list">
+						<li>Low-level library development</li>
+						<li>Embedded systems</li>
+						<li>Arduino and Raspberry Pi prototypes</li>
+					</ul>
+				</div>
+				<div id="c_sharp_development" class="card">
+					<h3 class="card_title">C# Developer</h3>
+					<img id="c_sharp_logo" alt="C#" src="assets/cards/c-sharp.png" class="card_logo" loading="lazy"/>
+					<ul class="card_list">
+						<li>Application Development for Windows OS with WPF</li>
+						<li>Engineering tools development</li>
+						<li>MySQL database</li>
+						<li>Windows API</li>
+					</ul>
+				</div>
+			</div>
+		</section>
 
-        <!-- Education Section -->
-        <section id="education" class=".section-education education">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Hồ sơ Cá nhân</h2>
-                    <div class="section-subtitle">
-                        <p>Thông tin học vấn và hồ sơ chuyên môn</p>
-                    </div>
-                </div>
-                
-                <div class="cv-container">
-                    <!-- Header với tên và tiêu đề -->
-                    
-                    <div class="cv-content">
-                        <!-- Cột trái: Thông tin cá nhân -->
-                        <div class="cv-left">
-                            <!-- Ảnh chân dung -->
-                            <div class="profile-image">
-                                <img src="../image/PhiLong2.jpg" alt="Hoàng Xuân Phi Long">
-                            </div>
-                            
-                            <!-- Thông tin liên hệ -->
-                            <div class="contact-section">
-                                <h3>Liên hệ</h3>
-                                <div class="contact-item">
-                                    <i class="fas fa-phone"></i>
-                                    <span>0357534303</span>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="fas fa-envelope"></i>
-                                    <span>yuluwusu@gmail.com</span>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Tân Phú, TP.Hồ Chí Minh</span>
-                                </div>
-                                <div class="contact-item">
-                                    <i class="fab fa-github"></i>
-                                    <span>github.com/YuluWusu</span>
-                                </div>
-                            </div>
-                            
-                            <!-- Kỹ năng ngoại ngữ -->
-                            <div class="language-section">
-                                <h3>Ngoại ngữ</h3>
-                                <div class="language-item">
-                                    <span>Tiếng Việt</span>
-                                    <div class="language-level native">Thành thạo</div>
-                                </div>
-                                <div class="language-item">
-                                    <span>Tiếng Anh</span>
-                                    <div class="language-level advanced">TOEIC 850+</div>
-                                </div>
-                                <div class="language-item">
-                                    <span>Tiếng Hàn</span>
-                                    <div class="language-level basic">Cơ bản</div>
-                                </div>
-                                <div class="language-item">
-                                    <span>Tiếng Nhật</span>
-                                    <div class="language-level basic">Cơ bản</div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Cột phải: Thông tin chi tiết -->
-                        <div class="cv-right">
-                            <!-- Thông tin cá nhân -->
-                            <div class="info-section">
-                                <h3>Thông tin Cá nhân</h3>
-                                <div class="info-grid">
-                                    <!-- Trong phần .info-section, thêm vào .info-grid -->
-                                    <div class="info-item">
-                                        <div class="info-label">Họ và tên</div>
-                                        <div class="info-value">Hoàng Xuân Phi Long</div>
-                                    </div>
-                                    <div class="info-item">
-                                        <div class="info-label">Giới tính</div>
-                                        <div class="info-value">Nam</div>
-                                    </div>
-                                    <div class="info-item">
-                                        <div class="info-label">Chuyên ngành</div>
-                                        <div class="info-value">Công Nghệ Thông Tin</div>
-                                    </div>
-                                    <div class="info-item">
-                                        <div class="info-label">Ngày sinh</div>
-                                        <div class="info-value">15/09/2006</div>
-                                    </div>
-                                    <div class="info-item">
-                                        <div class="info-label">Quê quán</div>
-                                        <div class="info-value">Quảng Trị</div>
-                                    </div>
-                                    <div class="info-item">
-                                        <div class="info-label">Cư trú</div>
-                                        <div class="info-value">Phường Tây Thạnh, Quận Tân Phú, Thành Phố Hồ Chí Minh</div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Học vấn -->
-                            <div class="education-section">
-                                <h3>Học vấn</h3>
-                                <div class="education-item">
-                                    <div class="edu-header">
-                                        <h4>Trường Đại học Công Thương TP.HCM (HUIT)</h4>
-                                        <span class="edu-period">2024 - Hiện tại</span>
-                                    </div>
-                                    <p class="edu-degree">Kỹ sư Công Nghệ Thông Tin</p>
-                                    <div class="edu-gpa">
-                                        <span class="gpa-label">Điểm trung bình tích lũy:</span>
-                                        <span class="gpa-value">3.76/4.0 (Xuất sắc)</span>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Các môn điểm cao -->
-                            <div class="courses-section">
-                                <h3>Môn chuyên ngành</h3>
-                                <div class="courses-grid">
-                                    <div class="course-item">
-                                        <div class="course-name">Thiết kế web</div>
-                                        <div class="course-score">10/10</div>
-                                    </div>
-                                    <div class="course-item">
-                                        <div class="course-name">Nhập môn lập trình</div>
-                                        <div class="course-score">9.2/10</div>
-                                    </div>
-                                    <div class="course-item">
-                                        <div class="course-name">Thực Hành Nhập môn lập trình</div>
-                                        <div class="course-score">9.3/10</div>
-                                    </div>
-                                    <div class="course-item">
-                                        <div class="course-name">Cơ sở dữ liệu</div>
-                                        <div class="course-score">9.2/10</div>
-                                    </div>
-                                    <div class="course-item">
-                                        <div class="course-name">Thực Hành Cơ sở dữ liệu</div>
-                                        <div class="course-score">10/10</div>
-                                    </div>
-                                    <div class="course-item">
-                                        <div class="course-name">Cấu trúc dữ liệu & Giải thuật</div>
-                                        <div class="course-score">9.5/10</div>
-                                    </div>
-                                    <div class="course-item">
-                                        <div class="course-name">Thực Hành Cấu trúc dữ liệu & Giải thuật</div>
-                                        <div class="course-score">10/10</div>
-                                    </div>
-                                    <div class="course-item">
-                                        <div class="course-name">Lập trình hướng đối tượng</div>
-                                        <div class="course-score">9.8/10</div>
-                                    </div>
-                                    <div class="course-item">
-                                        <div class="course-name">Thực Hành Lập trình hướng đối tượng</div>
-                                        <div class="course-score">9.8/10</div>
-                                    </div>
-                                    <div class="course-item">
-                                        <div class="course-name">Mạng máy tính</div>
-                                        <div class="course-score">8.1/10</div>
-                                    </div>
-                                    <div class="course-item">
-                                        <div class="course-name">Kiến trúc máy tính</div>
-                                        <div class="course-score">7.9/10</div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Học bổng -->
-                            <div class="scholarship-section">
-                                <h3>Học bổng & Danh hiệu</h3>
-                                <div class="scholarship-list">
-                                    <div class="scholarship-item">
-                                        <div class="scholar-icon">
-                                            <i class="fas fa-award"></i>
-                                        </div>
-                                        <div class="scholar-content">
-                                            <h4>Học bổng khuyến học loại Giỏi</h4>
-                                            <p>Học kỳ I - Năm học 2024-2025</p>
-                                        </div>
-                                    </div>
-                                    <div class="scholarship-item">
-                                        <div class="scholar-icon">
-                                            <i class="fas fa-award"></i>
-                                        </div>
-                                        <div class="scholar-content">
-                                            <h4>Học bổng khuyến học loại Giỏi</h4>
-                                            <p>Học kỳ II - Năm học 2024-2025</p>
-                                        </div>
-                                    </div>
-                                    <div class="scholarship-item">
-                                        <div class="scholar-icon">
-                                            <i class="fas fa-trophy"></i>
-                                        </div>
-                                        <div class="scholar-content">
-                                            <h4>Danh hiệu Sinh viên Giỏi</h4>
-                                            <p>Năm học 2024-2025</p>
-                                        </div>
-                                    </div>
-                                    <div class="scholarship-item">
-                                        <div class="scholar-icon">
-                                            <i class="fas fa-award"></i>
-                                        </div>
-                                        <div class="scholar-content">
-                                            <h4>Học bổng khuyến học loại Xuất Sắc</h4>
-                                            <p>Học kỳ I - Năm học 2025-2026</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <!-- Kỹ năng lập trình -->
-                            <div class="skills-section">
-                                <h3>Kỹ năng Lập trình</h3>
-                                <div class="skills-tags">
-                                    <span class="skill-tag">C/C++</span>
-                                    <span class="skill-tag">C#</span>
-                                    <span class="skill-tag">Python</span>
-                                    <span class="skill-tag">JavaScript</span>
-                                    <span class="skill-tag">HTML5/CSS3</span>
-                                    <span class="skill-tag">Git/GitHub</span>
-                                    <span class="skill-tag">MySQL</span>
-                                    <span class="skill-tag">.NET Framework</span>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+		<section id="work_experience" class="aftertw scroll-element">
 
+			<h1 class="titlehead">
+				WORK EXPERIENCE
+			</h1>
+			<div class="we_timeline">
+				<div class="we_container left">
+					<div class="we_date">Sep 2023 - Now</div>
+					<img class="icon" alt="Volvo CE Logo" src="assets/timeline/volvo.png" loading="lazy"/>
+					<div class="we_content">
+						<h2>Senior Android Platform Engineer</h2>
+						<h3>Volvo Construction Equipment</h3>
+					</div>
+				</div>
+				<div class="we_container right">
+					<div class="we_date">Mar 2022 - Aug 2023</div>
+					<img class="icon" alt="Volvo CE Logo" src="assets/timeline/volvo.png" loading="lazy"/>
+					<div class="we_content">
+						<h2>Android Platform Engineer</h2>
+						<h3>Volvo Construction Equipment</h3>
+					</div>
+				</div>
+				<div class="we_container left">
+					<div class="we_date">Aug 2021 - Feb 2022</div>
+					<img class="icon" alt="Ford Motor Company Logo" src="assets/timeline/ford.jpeg" loading="lazy"/>
+					<div class="we_content">
+						<h2>Android Automotive OS Developer</h2>
+						<h3>Ford Motor Company</h3>
+					</div>
+				</div>
+				<div class="we_container right">
+					<div class="we_date">Jul 2020 - Jul 2021</div>
+					<img class="icon" alt="Ford Motor Company Logo" src="assets/timeline/ford.jpeg" loading="lazy"/>
+					<div class="we_content">
+						<h2>Software Developer</h2>
+						<h3>Ford Motor Company</h3>
+					</div>
+				</div>
+				<div class="we_container left">
+					<div class="we_date">Jun 2019 - Jun 2020</div>
+					<img class="icon" alt="Ford Motor Company Logo" src="assets/timeline/ford.jpeg" loading="lazy"/>
+					<div class="we_content">
+						<h2>Software Developer Intern</h2>
+						<h3>Ford Motor Company</h3>
+					</div>
+				</div>
+				<div class="we_container right">
+					<div class="we_date">Mar 2018 - May 2019</div>
+					<img class="icon" alt="ZOOM education for life Logo" src="assets/timeline/zoom.jpeg" loading="lazy"/>
+					<div class="we_content">
+						<h2>Educational Assistant - Robotics and Technology</h2>
+						<h3>ZOOM education for life</h3>
+					</div>
+				</div>
+				<div class="we_container left">
+					<div class="we_date">Oct 2018 - Dec 2018</div>
+					<img class="icon" alt="SENAI Logo" src="assets/timeline/senai.png" loading="lazy"/>
+					<div class="we_content">
+						<h2>PLC Programming Trainer</h2>
+						<h3>SENAI</h3>
+					</div>
+				</div>
+				<div class="we_container right">
+					<div class="we_date">Aug 2017 - Jul 2018</div>
+					<img class="icon" alt="UFBA Logo" src="assets/timeline/ufba.png" loading="lazy"/>
+					<div class="we_content">
+						<h2>Scientific Researcher</h2>
+						<h3>Federal University of Bahia (UFBA)</h3>
+					</div>
+				</div>
+				<div class="we_container left">
+					<div class="we_date">Jun 2016 - May 2017</div>
+					<img class="icon" alt="SENAI Cimatec Logo" src="assets/timeline/senai_cimatec.jpeg" loading="lazy"/>
+					<div class="we_content">
+						<h2>Industrial Automation Intern</h2>
+						<h3>SENAI Cimatec</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="education" class="aftertw scroll-element">
+			<h1 class="titlehead">
+				EDUCATION
+			</h1>
+			<div class="we_timeline">
+				<div class="we_container left">
+					<div class="we_date_education">2017 - 2023</div>
+					<img class="icon" alt="UFBA Logo" src="assets/timeline/ufba.png" loading="lazy"/>
+					<div class="we_content">
+						<h2>B.E. Computer Engineering</h2>
+						<h3>Federal University of Bahia (UFBA)</h3>
+					</div>
+				</div>
+				<div class="we_container right">
+					<div class="we_date_education">2014 - 2016</div>
+					<img class="icon" alt="SENAI Cimatec Logo" src="assets/timeline/senai_cimatec.jpeg" loading="lazy"/>
+					<div class="we_content">
+						<h2>A.S. Electrotechnology</h2>
+						<h3>SENAI Cimatec</h3>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <!-- achievement Section -->
-        <section id="achievement" class="section achievement">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Thành Tựu</h2>
-                    <p class="section-subtitle">
-                        Những hoạt động, thành tích và dự án đã đạt được trong quá trình học tập và nghiên cứu
-                    </p>
-                </div>
-                
-                <div class="achievement-content">
-                    <div class="box">
-                        <img src="../image/Achiv1.jpg" alt="Nghiên cứu khoa học AI">
-                        <div class="box-content">
-                            <div class="achievement-date">
-                                <i class="fas fa-calendar-alt"></i>
-                                Tháng 4, 2025
-                            </div>
-                            <h3 class="title-name">Vào Chung Kết Nghiên Cứu Khoa Học</h3>
-                            <p class="title-desc">
-                                Đề tài: "Xây dựng hệ thống AI sử dụng mô hình YOLO và Faster R-CNN 
-                                nhằm hỗ trợ nhận diện bệnh ung thư da". Phát triển giải pháp công nghệ 
-                                hỗ trợ chẩn đoán y tế với độ chính xác cao.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">AI/ML</span>
-                                <span class="tag">Computer Vision</span>
-                                <span class="tag">YOLO</span>
-                                <span class="tag">Faster R-CNN</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="box">
-                        <img src="../image/Achiv2.jpg" alt="Dự án phát triển web">
-                        <div class="box-content">
-                            <div class="achievement-date">
-                                <i class="fas fa-calendar-alt"></i>
-                                Tháng 6, 2025
-                            </div>
-                            <h3 class="title-name">Đạt giải Khuyến Khích cuộc thi học thuật cấp khoa</h3>
-                            <p class="title-desc">
-                                Tham dự cuộc thi nghiên cứu học thuật, sử dụng đề tài Chẩn đoán bệnh tiểu đường dựa trên học máy (Machine Learning)
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">AI/ML</span>
-                                <span class="tag">CNN</span>
-                                <span class="tag">Classification</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="box">
-                        <img src="../image/Achiv3.jpg" alt="Thành tựu học thuật">
-                        <div class="box-content">
-                            <div class="achievement-date">
-                                <i class="fas fa-calendar-alt"></i>
-                                Năm nhất, 2025
-                            </div>
-                            <h3 class="title-name">Đạt Danh Hiệu Sinh Viên Xuất Sắc</h3>
-                            <p class="title-desc">
-                                Xuất sắc đạt điểm GPA 3.8/4.0, nằm trong top 5% sinh viên có thành tích 
-                                học tập tốt nhất khoa. Tham gia tích cực các hoạt động nghiên cứu và 
-                                câu lạc bộ chuyên môn.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">Học tập</span>
-                                <span class="tag">Leadership</span>
-                                <span class="tag">GPA 3.8</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="box">
-                        <img src="../image/Achiv4.jpg" alt="ICPC National">
-                        <div class="box-content">
-                            <div class="achievement-date">
-                                <i class="fas fa-calendar-alt"></i>
-                                Tháng 11, 2025
-                            </div>
-                            <h3 class="title-name">Đại Diện Trường Tham Gia ICPC National 2025</h3>
-                            <p class="title-desc">
-                                Thành viên đội tuyển đại diện Trường ĐH Công Thương TP.HCM tham gia 
-                                kỳ thi lập trình ICPC National 2025. Lần đầu trải nghiệm thi đấu 
-                                quy mô quốc gia với 600+ đội từ các trường đại học trên cả nước.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">ICPC</span>
-                                <span class="tag">Lập trình thi đấu</span>
-                                <span class="tag">Teamwork</span>
-                                <span class="tag">Thuật toán</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <img src="../image/Achiv5.jpg" alt="Olympic Tin Học Việt Nam" style="object-position: center 30%;">
-                        <div class="box-content">
-                            <div class="achievement-date">
-                                <i class="fas fa-calendar-alt"></i>
-                                Tháng 12, 2025
-                            </div>
-                            <h3 class="title-name">Đại Diện Trường Tham Gia Olympic Tin Học Việt Nam</h3>
-                            <p class="title-desc">
-                                Một trong 3 sinh viên được chọn đại diện Trường ĐH Công Thương TP.HCM 
-                                tham dự Olympic Tin học Việt Nam lần thứ 34. Thử thách bản thân với 
-                                các bài toán tin học cấp quốc gia.
-                            </p>
-                            <div class="achievement-tags">
-                                <span class="tag">Olympic Tin Học</span>
-                                <span class="tag">Lập trình thi đấu</span>
-                                <span class="tag">Quốc Gia</span>
-                                <span class="tag">Thuật toán</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script src="../javascript/portfolio.js"></script>
-    <script src="../javascript/responsive.js"></script>
+		<section id="projects" class="aftertw scroll-element last-section">
+			<h1 class="titlehead">
+				PROJECTS
+			</h1>
+			<input type="radio" name="slider" id="left_slider">
+			<input type="radio" name="slider" id="center_slider" checked>
+			<input type="radio" name="slider" id="right_slider">			
+			<div id="projects_view" class="projects-cards">
+				<label id="left_card" for="left_slider"  class="left_card card clearfix">
+					<h1  class="card_title"></h1> 
+					<img id="left_img" class="card_logo" loading="lazy"/>
+					<p class="card_description"></p>
+					<button id="left_card_button" class="projectsbutton"></button>
+				</label>
+				<label id="center_card" for="center_slider" class="center_card card clearfix">
+					<h1  class="card_title"></h1> 
+					<img id="center_img" class="card_logo" loading="lazy"/>
+					<p class="card_description"></p>
+					<button id="center_card_button" class="projectsbutton"></button>
+				</label>
+				<label id="right_card" for="right_slider" class="right_card card clearfix">
+					<h1  class="card_title"></h1> 
+					<img id="right_img" class="card_logo" loading="lazy"/>
+					<p class="card_description"></p>
+					<button id="right_card_button" class="projectsbutton"></button>
+				</label>
+			</div>
+			<div id="projects_languages" class="projects-languages clearfix" loading="lazy"></div>
+		</section>
+	</div>	
 </body>
+
 </html>
